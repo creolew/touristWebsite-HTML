@@ -1,0 +1,241 @@
+
+/*--------------------------------------------------------------------- File Name: p4.css ---------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+font-family: 'Roboto';
+
+
+
+@font-face{
+  font-family: myfont1;
+  src: url(font/AustinItalic.ttf);
+}
+@font-face{
+  font-family: myfont2;
+  src: url(font/Austin.ttf);
+}
+
+*{
+  font-family: myfont1;
+  color: #002993;
+}
+/*--------------------------------------------------------------------- navigation ---------------------------------------------------------------------*/
+#navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: grey;
+ 
+}
+
+#navigation li {
+  float: left;
+}
+
+#navigation a {
+  display: block;
+
+  text-align: center;
+  padding: 20px 5px;
+  text-decoration: none;
+  font-size: 80%;
+}
+
+
+/*--------------------------------------------------------------------- drop down ---------------------------------------------------------------------*/
+
+.dropbtn {
+  background-color: lightgrey;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: blue;
+  color: white;
+}
+
+
+/*--------------------------------------------------------------------- sec 1-background image ---------------------------------------------------------------------*/
+
+#sec1 {
+  background-image: url('img/281ca522592f229783eaaf8e282a7d4a.jpg'); 
+  background-size: 100% 100%;
+  color: white;
+  height: 441px; 
+  width: 100%;
+  background-repeat: no-repeat;
+ 
+}
+
+
+
+/*--------------------------------------------------------------------- footer ---------------------------------------------------------------------*/
+
+
+
+                                          /*------------------------- contact 1 -------------------------*/
+
+#contact1 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: grey;
+ 
+}
+
+
+#contact1 a {
+  display: block;
+  text-align: left;
+  padding: 20px 5px;
+  text-decoration: none;
+  font-size: 100%;
+  background-color: lavender;
+}
+
+
+
+.text{
+  float: left;
+}
+ #int3 {
+    float: right;
+    background-image: url(img/home_3.png);
+    width: 298px;
+    height: 154px;
+    left: 50%;
+    margin-top: 0px;
+    
+    position: relative;
+    animation-name: nonla;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+
+                                          /*------------------------- animation: non la -------------------------*/
+@keyframes nonla{
+  0%   {left:0px; top:0px;}
+  50%  {left:0px; top:200px;}
+  75% {left:0px; top:-200px;}
+  100%   {left:0px; top:0px;}
+  
+}
+    
+
+
+
+
+/*--------------------------------------------------------------------- media query ---------------------------------------------------------------------*/
+
+
+
+*{
+  box-sizing: border-box;
+}
+  
+.row::after {
+  content: "";
+  clear: both;
+ float: left;
+}
+
+
+                                            /*------------------------- mobile phone -------------------------*/
+
+
+[class*="col-"] {
+  width: 100%;
+
+  
+}
+
+@media only screen and (min-width: 768px) {
+
+
+                                            /*------------------------- ipad -------------------------*/
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+  #sec1
+  {
+    background-size: 100% 100%;}
+
+
+
+
+}
+
+@media only screen and (min-width: 992px) {
+
+                                            /*------------------------- laptop -------------------------*/
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+}
+
+@media only screen and (max-width:650px) {
+  #an{
+    display: none;
+   
+  }
+
+
+  
+}
+

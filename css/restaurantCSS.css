@@ -1,0 +1,102 @@
+/*--------------------------------------------------------------------- File Name: d4.css ---------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+
+@font-face{
+  font-family: myfont1;
+  src: url(font/AustinItalic.ttf);
+}
+@font-face{
+  font-family: myfont2;
+  src: url(font/Austin.ttf);
+}
+
+*{
+  font-family: myfont1;
+  color: #002993;
+  box-sizing: border-box;
+}
+/*--------------------------------------------------------------------- animation ---------------------------------------------------------------------*/
+#ant {
+    position: relative;
+    margin-left: 20%;
+    background-image: url(img/food.png);
+    width: 184px;
+    height: 177px;
+    margin-top: 80px;
+    transition: all 4s cubic-bezier(0.23, 1, 0.32, 1);
+
+    position: relative;
+    animation-name: pie;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pie{
+  0%   {left:0px; top:50px;}
+  50%  {left:-40px; top:100px;}
+  75%  {left:10px; top:-50px;}
+  100% {left:100px; top:0px;}
+  
+}
+
+/*--------------------------------------------------------------------- images ---------------------------------------------------------------------*/
+/*sec1*/
+#sec1 img{
+    width: 100%;
+}
+
+
+
+
+/*--------------------------------------------------------------------- media query ---------------------------------------------------------------------*/
+.row::after {
+  content: "";
+  clear: both;
+  float: left;
+}
+
+                                            /*------------------------- mobile phone -------------------------*/
+[class*="col-"] {
+  width: 100%;
+  float: left;
+}
+
+@media only screen and (min-width: 768px) {
+                                            /*------------------------- ipad -------------------------*/
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+  
+  
+}
+
+
+
+
+
+@media only screen and (min-width: 992px) {
+                                            /*------------------------- laptop -------------------------*/
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
